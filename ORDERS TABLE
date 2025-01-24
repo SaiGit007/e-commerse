@@ -1,0 +1,45 @@
+CREATE TABLE ORDERS(ORDER_ID INT,CUSTOMER_ID INT,ORDER_DATE DATE,ORDER_TOTAL NUMBER(8,2),PAYMENT_METHOD VARCHAR2(100),PAYMENT_DATE DATE,SHIPPING_ADDRESS VARCHAR2(255),SHIPPING_CITY VARCHAR2(100),SHIPPING_STATE VARCHAR2(50),SHIPPING_PINCODE INT,SHIPPING_COUNTRY VARCHAR2(25),ORDER_ITEMS INT,CREATED_AT DATE,UPDATED_AT DATE);
+ DESC OORDERS;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ORDER_ID                                           NUMBER(38)
+ CUSTOMER_ID                                        NUMBER(38)
+ ORDER_DATE                                         DATE
+ ORDER_TOTAL                                        NUMBER(8,2)
+ PAYMENT_METHOD                                     VARCHAR2(100)
+ PAYMENT_DATE                                       DATE
+ SHIPPING_ADDRESS                                   VARCHAR2(255)
+ SHIPPING_CITY                                      VARCHAR2(100)
+ SHIPPING_STATE                                     VARCHAR2(50)
+ SHIPPING_PINCODE                                   NUMBER(38)
+ SHIPPING_COUNTRY                                   VARCHAR2(25)
+ ORDER_ITEMS                                        NUMBER(38)
+ CREATED_AT                                         DATE
+ UPDATED_AT                                         DATE
+
+USES :-
+=======
+
+1. ORDER_ID: Unique identifier for each order.
+
+2. CUSTOMER_ID: Links the order to the customer who placed it.
+
+3. ORDER_DATE: Date the order was placed.
+
+4. ORDER_TOTAL: Total cost of the order.
+
+5. PAYMENT_METHOD: Method used to pay for the order (e.g., credit card, PayPal).
+
+6. PAYMENT_DATE: Date the payment was processed.
+
+7. SHIPPING_ADDRESS: Address where the order will be shipped.
+
+8. SHIPPING_CITY: City where the order will be shipped.
+
+9. SHIPPING_STATE: State where the order will be shipped.
+
+10. SHIPPING_PINCODE: Postal code where the order will be shipped.
+
+11. SHIPPING_COUNTRY: Country where the order will be shipped.
+
+12. ORDER_STATUS: Current status of the order (e.g., pending, shipped, delivered).
