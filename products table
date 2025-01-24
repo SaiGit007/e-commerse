@@ -1,0 +1,56 @@
+create table products(product_id int,product_name varchar2(100),product_Discription varchar2(100),product_category varchar2(20),product_subcategory varchar2(20),product_brand varchar2(20),product_model int,product_price number(8,2),product_discount int,product_image blob,product_stock int,product_stutes varchar2(20),product_rating int,product_review int,product_warranty v
+archar2(20),product_return_policy varchar2(200));
+
+ desc products;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ PRODUCT_ID                                         NUMBER(38)
+ PRODUCT_NAME                                       VARCHAR2(100)
+ PRODUCT_DISCRIPTION                                VARCHAR2(100)
+ PRODUCT_CATEGORY                                   VARCHAR2(20)
+ PRODUCT_SUBCATEGORY                                VARCHAR2(20)
+ PRODUCT_BRAND                                      VARCHAR2(20)
+ PRODUCT_MODEL                                      NUMBER(38)
+ PRODUCT_PRICE                                      NUMBER(8,2)
+ PRODUCT_DISCOUNT                                   NUMBER(38)
+ PRODUCT_IMAGE                                      BLOB
+ PRODUCT_STOCK                                      NUMBER(38)
+ PRODUCT_STUTES                                     VARCHAR2(20)
+ PRODUCT_RATING                                     NUMBER(38)
+ PRODUCT_REVIEW                                     NUMBER(38)
+ PRODUCT_WARRANTY                                   VARCHAR2(20)
+ PRODUCT_RETURN_POLICY                              VARCHAR2(200)
+
+ USES :-
+ =======================
+ 1. PRODUCT_ID: Unique identifier for each product.
+
+2. PRODUCT_NAME: Name of the product.
+
+1. PRODUCT_DESCRIPTION: Brief description of the product.
+
+2. PRODUCT_CATEGORY: Category of the product (e.g., electronics, clothing).
+
+3. PRODUCT_SUBCATEGORY: Subcategory of the product (e.g., smartphones, laptops).
+
+4. PRODUCT_BRAND: Brand of the product.
+
+5. PRODUCT_MODEL: Model number of the product.
+
+6. PRODUCT_PRICE: Current price of the product.
+
+7. PRODUCT_DISCOUNT: Discount percentage or amount for the product.
+
+8. PRODUCT_IMAGE: Image of the product.
+
+1. PRODUCT_STOCK: Current stock level of the product.
+
+2. PRODUCT_STATUS: Status of the product (e.g., active, inactive, out of stock).
+
+3. PRODUCT_RATING: Average rating of the product based on customer reviews.
+
+4. PRODUCT_REVIEW: Number of customer reviews for the product.
+
+5. PRODUCT_WARRANTY: Warranty information for the product.
+
+6. PRODUCT_RETURN_POLICY: Return policy information for the product.
