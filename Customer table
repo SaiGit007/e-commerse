@@ -1,0 +1,81 @@
+Creating customer table in e-ecommerce:-
+
+SQL>create table customer(Customer_id int,Name varchar2(80),emial varchar2(30),phone int,Address varchar2(100), city varchar2(25),state varchar2(25),pincode int,country varchar2(50),Rigistration_Date Date,Last_login Date,account_status varchar2(15),Reward_points int);
+Structure of the Table:-
+desc cccustomer;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ CUSTOMER_ID                                        NUMBER(38)
+ NAME                                               VARCHAR2(80)
+ EMIAL                                              VARCHAR2(30)
+ PHONE                                              NUMBER(38)
+ ADDRESS                                            VARCHAR2(100)
+ CITY                                               VARCHAR2(25)
+ STATE                                              VARCHAR2(25)
+ PINCODE                                            NUMBER(38)
+ COUNTRY                                            VARCHAR2(50)
+ RIGISTRATION_DATE                                  DATE
+ LAST_LOGIN                                         DATE
+ ACCOUNT_STATUS                                     VARCHAR2(15)
+ REWARD_POINTS                                      NUMBER(38)
+
+Customer Table Columns:-
+========================
+
+1. Customer_ID (Primary Key): Unique identifier for each customer.
+2. Name: Customer's full name.
+3. Email: Customer's email address.
+4. Phone: Customer's phone number.
+5. Password: Customer's password (hashed for security).
+6. Address: Customer's default shipping address.
+7. City: Customer's city.
+8. State: Customer's state.
+9. Pincode: Customer's pincode.
+10. Country: Customer's country.
+11. Registration_Date: Date the customer registered.
+12. Last_Login: Date and time of the customer's last login.
+13. Account_Status: Status of the customer's account (e.g., active, inactive).
+14. Reward_Points: Number of reward points the customer has earned.
+
+
+
+Column Uses:-
+============
+
+1. Customer_ID (Primary Key): Uniquely identifies each customer. Used as a reference in other tables, such as Orders and Payments.
+2. Name: Stores the customer's full name, which can be used for:
+    - Displaying the customer's name in their account profile.
+    - Personalizing emails and notifications.
+    - Addressing the customer in customer support interactions.
+3. Email: Stores the customer's email address, which can be used for:
+    - Sending order confirmations, shipping updates, and promotional emails.
+    - Resetting passwords.
+    - Verifying customer identities.
+4. Phone: Stores the customer's phone number, which can be used for:
+    - Sending SMS updates about orders and shipments.
+    - Verifying customer identities.
+    - Providing customer support via phone calls.
+5. Password: Stores the customer's password (hashed for security), which is used for:
+    - Authenticating customers when they log in to their accounts.
+    - Protecting customer account information.
+6. Address: Stores the customer's default shipping address, which is used for:
+    - Shipping orders to the customer.
+    - Calculating shipping costs and taxes.
+
+
+
+7. City, State, Pincode, and Country: Store the customer's location information, which is used for:
+    - Calculating shipping costs and taxes.
+    - Providing location-based services and recommendations.
+8. Registration_Date: Stores the date the customer registered, which can be used for:
+    - Tracking customer acquisition and retention rates.
+    - Sending anniversary emails and offers.
+9. Last_Login: Stores the date and time of the customer's last login, which can be used for:
+    - Tracking customer engagement and activity.
+    - Sending re-engagement emails and offers.
+10. Account_Status: Stores the status of the customer's account (e.g., active, inactive), which is used for:
+    - Managing customer access to their accounts.
+    - Tracking customer churn and retention rates.
+11. Reward_Points: Stores the number of reward points the customer has earned, which can be used for:
+    - Tracking customer loyalty and rewards.
+    - Providing personalized offers and recommendations.
