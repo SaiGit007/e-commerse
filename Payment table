@@ -1,0 +1,47 @@
+ create table Payment(payment_id int,order_id int,payment_method varchar2(100),payment_date date,payment_status varchar2(100),payment_gateway varchar2(100),card_number int,card_expiry_date date);
+
+DESC PAYMENT;
+
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ PAYMENT_ID                                         NUMBER(38)
+ ORDER_ID                                           NUMBER(38)
+ PAYMENT_METHOD                                     VARCHAR2(100)
+ PAYMENT_DATE                                       DATE
+ PAYMENT_STATUS                                     VARCHAR2(100)
+ PAYMENT_GATEWAY                                    VARCHAR2(100)
+ CARD_NUMBER                                        NUMBER(38)
+ CARD_EXPIRY_DATE                                   DATE
+
+uses:-
+=====
+1. PAYMENT_ID: Uniquely identifies each payment transaction.
+
+2. ORDER_ID: Links the payment to the corresponding order, enabling order tracking and fulfillment.
+
+3. PAYMENT_METHOD: Helps analyze payment trends, optimize payment processing, and provide customer insights.
+
+4. PAYMENT_DATE: Enables tracking of payment timelines, identifying delays, and optimizing cash flow.
+
+5. PAYMENT_AMOUNT: Facilitates financial reporting, revenue tracking, and tax compliance.
+
+6. PAYMENT_STATUS: Allows real-time monitoring of payment processing, enabling swift issue resolution and improved customer satisfaction.
+
+7. TRANSACTION_ID: Provides a unique reference for each payment transaction, simplifying reconciliation and dispute resolution.
+
+8. PAYMENT_GATEWAY: Helps evaluate payment gateway performance, identify optimization opportunities, and ensure seamless payment processing.
+
+9. CARD_NUMBER (encrypted): Securely stores credit card information for recurring payments, refunds, or chargebacks.
+
+10. CARD_EXPIRY_DATE (encrypted): Ensures timely updates of credit card information, preventing payment disruptions and reducing declined transactions.
+
+AND:-
+====
+
+- Payment processing and tracking
+- Order fulfillment and management
+- Financial reporting and revenue tracking
+- Customer insights and payment trend analysis
+- Payment gateway evaluation and optimization
+- Risk management and dispute resolution
+- Compliance with regulatory requirements
